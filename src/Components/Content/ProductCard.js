@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function ProductCard(props) {
-  console.log(props);
   return (
     <div className="col-sm-3 mb-3 mt-3">
       <div className="card">

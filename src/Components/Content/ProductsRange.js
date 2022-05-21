@@ -15,6 +15,12 @@ export default function ProductsRange(props) {
           />
         );
       })}
+      <div className="d-flex justify-content-center mb-3 mt-2">
+        <button type="button" class="btn btn-primary">
+          Show More
+        </button>
+      </div>
+      ;
     </div>
   );
 }

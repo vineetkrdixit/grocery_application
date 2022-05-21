@@ -1,4 +1,5 @@
 import React from "react";
+import FeedbackForm from "./FeedbackForm";
 import ProductBanner from "./ProductBanner";
 import ProductFilter from "./ProductFilter";
 import ProductsRange from "./ProductsRange";
@@ -91,6 +92,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <FeedbackForm />
     </>
   );
 }
