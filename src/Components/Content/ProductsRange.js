@@ -10,8 +10,9 @@ export default function ProductsRange(props) {
             key={items.productId}
             productId={items.productId}
             productTitle={items.productTitle}
-            productDiscription={items.productDiscription}
+            productDiscription={items.productDescription}
             productPrice={items.productPrice}
+            imgSrc={items.imgSrc}
           />
         );
       })}

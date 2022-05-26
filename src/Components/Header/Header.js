@@ -1,12 +1,33 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "../Header/Header.css";
 
 export default function Header() {
   return (
     <div>
       <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
-          <h5 class="text-white h4">Collapsed content</h5>
-          <span class="text-muted">Toggleable via the navbar brand.</span>
+          <ul className="Header-LI d-flex">
+            <Link to="/home" style={{ color: "none", textDecoration: "none" }}>
+              <li>
+                <p>Home</p>
+              </li>
+            </Link>
+            <Link
+              to="/aboutus"
+              style={{ color: "none", textDecoration: "none" }}
+            >
+              <li>
+                <p>About Us</p>
+              </li>
+            </Link>
+            <Link
+              to="contactus"
+              style={{ color: "none", textDecoration: "none" }}
+            >
+              <li>Contact Us</li>
+            </Link>
+          </ul>
         </div>
       </div>
       <nav class="navbar navbar-dark bg-dark">
@@ -22,9 +43,9 @@ export default function Header() {
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">
+          <Link to="/" class="navbar-brand">
             LOGO
-          </a>
+          </Link>
         </div>
       </nav>
     </div>
