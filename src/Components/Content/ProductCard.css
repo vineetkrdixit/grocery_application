@@ -29,7 +29,6 @@
 .card-img-top {
   min-height: 100px;
   max-height: 140px;
-  width: fit-content;
 }
 
 .fullCard {
